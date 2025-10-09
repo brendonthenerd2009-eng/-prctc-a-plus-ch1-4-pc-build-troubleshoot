@@ -1,18 +1,35 @@
 # Lab 1 — Troubleshooting Methodology
 
-**Goal:** Practice the A+ flow: identify → theory → test → plan → verify → document.
+Ask the User:
 
-**Scenario:** PC powers on, fans spin, but shows “No boot device available.”
+Did you recently change any hardware?
 
-## Your Tasks
-- Identify: Write 3 useful questions you’d ask the user.
-- Theory: List 2–3 likely causes.
-- Test: What will you test first (and how)?
-- Plan & Fix: What did you do to try to fix it?
-- Verify: Did it work? If not, next step?
+Was the PC running slow or acting up before this?
 
-## Evidence
-- Screenshot of BIOS/UEFI storage page → `assets/screenshots/lab1_bios_storage.png`
+Is the OS on an internal hard drive or SSD?
 
-## Reflection (2–3 sentences)
-What changed from your first guess to the actual fix?
+💡 Possible Causes:
+
+Drive not connected or failed
+
+BIOS boot order is wrong
+
+Corrupted boot files
+
+🧪 First Thing to Check:
+
+Go into BIOS (press F2/DEL at startup).
+See if the boot drive is listed.
+If not → likely a hardware issue.
+If yes → check that it’s first in boot order.
+
+🛠️ What I Did to Fix It:
+
+Reseated the drive’s power and data cables
+
+Set correct boot device in BIOS
+
+If still no boot, tried booting from USB and repaired boot files
+
+## Reflection 
+At first, I suspected a simple boot order issue or a loose cable. However, after checking BIOS and reseating the cables, it turned out the drive wasn’t detected at all, pointing to a possible drive failure. The fix involved confirming the drive had failed and replacing it.
